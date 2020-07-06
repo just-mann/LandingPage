@@ -1,0 +1,157 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#active {
+    border-bottom: 1px solid var(--primaryColor);
+}
+
+/* Custom Variables */
+:root {
+    --primaryColor: #fff;
+    --secondaryColor: #333333;
+    --darkColor: #000;
+    --primaryFont: 'Lobster', cursive;
+    --secondaryFont: 'Sarina', cursive;
+    --thirdFont: 'Lora', serif;
+    --fourthFont: 'Roboto', sans-serif;
+    --thirdColor: #a79e9e;
+    --fourthColor: #ece2e2;
+    --logoFont: 'Sarina', cursive;
+    --primaryBtnColor: #008000;
+
+    /* Social Media Core Colors & Other Styles */
+    --youtubeColor: #ff0000;
+    --twitterColor: #1da1f2;
+    --facebookColor: #3b5998;
+    --githubColor: #000000;
+    --snapchatColor: #fffc00;
+    --skypeColor: #00aff0;
+    --instagramColor: #c32aa3;
+    --pinterestColor: #bd081c;
+    --linkedInColor: #007bb5;
+    --whatsAppColor: #25d366;
+    --tumblrColor: #35465d;
+    --yelpColor: #d32323;
+    --spotifyColor: #1ed760;
+    --yahooColor: #6001d2;
+    --twitchColor: #9146ff;
+    --soundcloudColor: #ff5500;
+}
+
+/* Social Media Colors and Styles */
+.fab,
+.fa {
+    cursor: pointer;
+    margin: 0px 3px;
+    font-size: 30px;
+}
+
+.fa-facebook {
+    color: var(--facebookColor);
+}
+
+.fa-youtube {
+    color: var(--youtubeColor);
+}
+
+.fa-github {
+    color: var(--githubColor);
+}
+
+.fa-twitter {
+    color: var(--twitterColor);
+}
+
+.fa-snapchat {
+    color: var(--snapchatColor);
+}
+
+.fa-skype {
+    color: var(--skypeColor);
+}
+
+.fa-instagram {
+    color: var(--instagramColor);
+}
+
+.fa-pinterest {
+    color: var(--pinterestColor);
+}
+
+.fa-linkedin {
+    color: (--linkedInColor);
+}
+
+.fa-whatsapp {
+    color: var(--whatsAppColor);
+}
+
+.fa-tumblr {
+    color: var(--tumblrColor);
+}
+
+.fa-yelp {
+    color: var(--yelpColor);
+}
+
+.fa-spotify {
+    color: var(--spotifyColor);
+}
+
+
+.fa-yahoo {
+    color: var(--yahooColor);
+}
+
+.fa-twitch {
+    color: var(--twitchColor);
+}
+
+.fa-soundcloud {
+    color: var(--soundcloudColor);
+}
+
+a:any-link {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px;
+}
+
+p {
+    line-height: 20px;
+}
+
+.btn {
+    display: block;
+    width: 250px;
+    margin-top: 25px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background: var(--primaryColor);
+    color: var(--darkColor);
+    transition: 0.5s;
+    text-decoration: none;
+}

@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    background: #fff;
+}
+
+#header {
+    background-color: #fcfaf8;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+}
+
+#header #container {
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#nav-bar {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* visibility: hidden; */
+}
+
+#logo {
+    text-decoration: none;
+    color: #000;
+}
+
+#container #header-img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#container #header-img h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+#nav-bar li {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+#nav-bar li a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+#main #container {
+    max-width: 1120px;
+    padding: 0 10px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main #container h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#formItems,
+#submit {
+    margin-top: 25px;
+}
+
+#email {
+    width: 300px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#submit {
+    width: 150px;
+    margin-top: 15px;
+    padding: 10px;
+    background: #ffd700;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.4s ease;
+}
+
+#submit:hover {
+    background: #daa520;
+}
+
+#features {
+    margin-top: 25px;
+    min-height: 45vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#premium,
+#fast,
+#quality {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+}
+
+#premium>i,
+#fast>i,
+#quality>i {
+    margin-right: 10px;
+    float: left;
+    color: #008000;
+}
+
+#premium>i {
+    font-size: 78px;
+}
+
+#premium>div,
+#fast>div,
+#quality>div {
+    margin-left: 25px;
+    float: right;
+}
+
+.cards {
+    background: #fff;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid #333;
+    width: 33.33%;
+    height: auto;
+    margin: 10px;
+}
+
+.cardHeader {
+    padding: 15px 0;
+    background: #d3d3d3;
+}
+
+.cardHeader h3 {
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cardBody {
+    min-height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardBody>div {
+    line-height: 1.4rem;
+    margin-top: 20px;
+}
+
+.cardBody .btn {
+    background: #ffd700;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    width: 50%;
+    margin: auto;
+    transition: 0.4s ease;
+}
+
+.cardBody .btn:hover {
+    background: #daa520;
+}
+
+.footer {
+    width: 100%;
+    background: lightgray;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer #container {
+    margin: auto;
+    max-width: 1120px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer i {
+    cursor: pointer;
+}
+
+.social a {
+    color: #000;
+}
+
+#video-area {
+    background: lightcoral;
+    max-width: 70%;
+    margin: 10px auto;
+    height: 50vh;
+}
+
+
+
+
+
+
+
+
+
+/* Responsiveness */
+@media (max-width: 650px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #nav-bar {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #premium>i,
+    #fast>i,
+    #quality>i {
+        display: none;
+    }
+
+    #premium h1,
+    #fast h1,
+    #quality h1 {
+        text-align: center;
+        float: none;
+    }
+
+    #premium,
+    #fast,
+    #quality {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 10px;
+        width: 50%;
+    }
+
+
+
+}
