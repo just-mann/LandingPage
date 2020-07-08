@@ -245,7 +245,7 @@ form {
     background: lightcoral;
     max-width: 70%;
     margin: 10px auto;
-    height: 50vh;
+    height: 75vh;
 }
 
 
@@ -301,7 +301,7 @@ form {
     }
 
     #video-area {
-        width: 100%;
+        min-width: 100%;
         height: 100%;
     }
 
