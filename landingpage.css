@@ -300,6 +300,10 @@ form {
         width: 50%;
     }
 
+    #video-area {
+        width: 100%;
+        height: 100%;
+    }
 
 
 }
